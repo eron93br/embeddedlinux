@@ -1,1 +1,1 @@
-# embeddedlinux
+# Embedded Linux 101
