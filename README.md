@@ -4,7 +4,7 @@ This page is organized to summarize the 101 of Embedded Linux. Most of the conte
 
 ## Topics 
 
-- **Linux for Embedded Systems**
+**1) Linux for Embedded Systems**
 
 Why should I use Linux on my Embedded Systems? 
 
@@ -27,7 +27,7 @@ The tools available are: Baserock, Buildroot, OpenEmbedded and The Yocto Project
 
 Building and maintaining an operating system is not a trivial task, the main aspects related to the building process are:  Bootloader, Kernel, Device Drivers, Life Cycle Management and App Software Management. 
 
-- **The Yocto Project**
+**2 )The Yocto Project**
 
 The Yocto Project is an open source collaboration project that helps developers create custom Linux-based systems regardless of the hardware architecture.
 
