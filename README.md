@@ -41,12 +41,26 @@ In order to use Yocto make sure your build host meets the following requirements
 
 You must install essential host packages on your build host. The following command installs the host packages based on an Ubuntu distribution:
 
-```sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
-   build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
-   xz-utils debianutils iputils-ping libsdl1.2-dev xterm
+```python
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
+build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
+xz-utils debianutils iputils-ping libsdl1.2-dev xterm
 ``` 
 
 Now we are ready to clone poky! Use `git clone git://git.yoctoproject.org/poky`. 
+
+
+**3)OpenEmbedded Build System**
+
+If you have built open source software packages for a Linux host system before, you may have noticed that the workflow follows a specific pattern.
+Fetch -> Extract -> Patch -> Configure -> Build -> Install -> Package
+
+Based on the OpenEmbebedded workflow, we can list: 
+
+## Application Development
+
+ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications.
+
 
 
 ## References 
