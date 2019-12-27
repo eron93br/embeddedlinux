@@ -57,6 +57,34 @@ Fetch -> Extract -> Patch -> Configure -> Build -> Install -> Package
 
 Based on the OpenEmbebedded workflow, we can list: 
 
+![alt tag](https://www.embarcados.com.br/wp-content/uploads/2016/07/yocto-environment.png)
+
+Metadata files are subdivided into the categories configuration files and recipes.
+
+Configuration Files
+
+- BitBake Master Configuration File (`bitbake.conf`): This file contains all the default configuration settings.
+
+- Layer Configuration (`layer.conf`): This file contains path settings and file patterns for the recipe files of the
+layer. The layer.conf file can be found in the conf subdirectory of the layer.
+
+- Build Environment Layer Configuration (`bblayers.conf`): The file bblayers.conf provides BitBake with information on what layers to include with the build process and the filesystem paths where they are found. Each build environment has its own bblayers.conf file, which can be found in the conf subdirectory of the build environment.
+
+- Build Environment Configuration (`local.conf`): The local.conf file contains settings that apply to the particular build environment, such as paths to download locations, build outputs, and other files. 
+
+- Distribution Configuration (`<distribution-name>.conf`): Distribution configuration files contain variable settings reflecting policies that apply for a
+particular distribution built by the OpenEmbedded build system.
+
+
+- Machine Configuration (`<machine-name>.conf`)
+
+Recipes 
+
+BitBake recipes form the core of the build system as they define the build workflow for each software package.
+
+
+The script oe-init-build-env creates and initializes build environments. It is used in two ways: to create an empty build environment with default settings and to initialize a build environment that has previously been created. 
+
 ## Application Development
 
 ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications.
