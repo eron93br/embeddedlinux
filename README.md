@@ -85,7 +85,17 @@ BitBake recipes form the core of the build system as they define the build workf
 
 The script oe-init-build-env creates and initializes build environments. It is used in two ways: to create an empty build environment with default settings and to initialize a build environment that has previously been created. 
 
-## Application Development
+# Linux System Architecture 
+
+A Linux OS can be divided into two levels, the kernel space and the user or application space.
+
+All kernel code is executed in unrestricted or privileged mode. In this mode, any instruction of the instruction set of the architecture can be executed.
+Application code, by contrast, is executed in restricted or user mode.
+
+- Bootloader: typically just initializes the hardware necessary for the operating system kernel to boot. All other hardware and peripherals are initialized by the operating system itself at a later stage of the boot process.
+- Kernel: the two primary functions of an operating system’s kernel are to manage the computer’s resources and allow other programs to execute and access the resources.
+
+# Application Development
 
 ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications.
 
@@ -94,5 +104,6 @@ ADT provides application developers with all the necessary tools to write user s
 ## References 
 
 [Embedded Linux Systems with the Yocto Project](http://book.yoctoprojectbook.com/index)
+[Embarcados Portal](https://www.embarcados.com.br/linux-para-a-raspberry-pi-3-usando-yocto/)
 
 
