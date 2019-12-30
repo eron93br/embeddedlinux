@@ -97,7 +97,7 @@ Application code, by contrast, is executed in restricted or user mode.
 
 # Application Development
 
-ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications.
+ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications..
 
 
 
