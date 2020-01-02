@@ -95,9 +95,41 @@ Application code, by contrast, is executed in restricted or user mode.
 - Bootloader: typically just initializes the hardware necessary for the operating system kernel to boot. All other hardware and peripherals are initialized by the operating system itself at a later stage of the boot process.
 - Kernel: the two primary functions of an operating system’s kernel are to manage the computer’s resources and allow other programs to execute and access the resources.
 
+[List of Linux bootloaders](https://www.ubuntupit.com/best-linux-bootloader-for-home-and-embedded-systems/)
+
+
+# Building a Custom Linux Distribution
+
+The simplest method for adding packages and package groups to images is to add IMAGE_INSTALL to the conf/local.conf file of your build environment:
+
+`IMAGE_INSTALL_append = ” <package> <package group>”` 
+
+After configure a image becomes important to test it with QEMU emulator. Even though you eventually build a system for the target hardware of your product, using QEMU for testing makes good sense due the long build of each personalized image. To run QEMU, follow the steps:
+
+- 1) `runqemu qemux86` 
+- 2) `runqemu qemux86 core-image-minimal` 
+
+
+- Extending a Core Image with a Recipe 
+
+Adding packages and package groups to CORE_IMAGE_EXTRA_INSTALL and IMAGE_INSTALL and in conf/local.conf may be straightforward and quick, but doing so makes a project hard to maintain and complicates reuse. A better way is to extend a predefined image through a recipe. Listing 7-2 shows a simple recipe that extends
+core-image-base. 
+
+__INCOMPLETO__
+
+# Software Package Recipes 
+
+
+
 # Application Development
 
 ADT provides application developers with all the necessary tools to write user space applications in C and C++ using the Linux and middleware APIs. These can be GNU Make–based, GNU Autotools–based, or CMakebased applications. After initializing the ADT environment, you can use the command-line to cross-build your applications..
+
+Setting Up a Yocto Project ADT
+
+- 1) Download the ADT Installer 
+- 2) Build the ADT installer 
+- 3) Build a Toolchain Installer to Create an ADT
 
 
 
