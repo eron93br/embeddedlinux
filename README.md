@@ -135,7 +135,9 @@ Setting Up a Yocto Project ADT
 
 ## References 
 
+[Yocto Toolchain Installation](http://variwiki.com/index.php?title=Yocto_Toolchain_installation)
 [Embedded Linux Systems with the Yocto Project](http://book.yoctoprojectbook.com/index)
 [Embarcados Portal](https://www.embarcados.com.br/linux-para-a-raspberry-pi-3-usando-yocto/)
+[Raspberry Pi cross compile](https://www.embarcados.com.br/cross-compiling-com-a-raspberry-pi/)
 
 
