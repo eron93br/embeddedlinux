@@ -131,7 +131,29 @@ Setting Up a Yocto Project ADT
 - 2) Build the ADT installer 
 - 3) Build a Toolchain Installer to Create an ADT
 
+- Installing the Toolchain
 
+To install and use the toolchain for Yocto builds, please follow the equivalent of the commands listed [here](http://variwiki.com/index.php?title=Yocto_Toolchain_installation).
+
+In order to run any C/C++ application, follow the rules to create an executable:
+
+- 1) Create a `configure.ac` file with the content: (note that this is to create the hello executable)
+
+```python 
+     AC_INIT(hello,0.1)
+     AM_INIT_AUTOMAKE([foreign])
+     AC_PROG_CC
+     AC_CONFIG_FILES(Makefile)
+     AC_OUTPUT
+``` 
+
+- 2) Create a makefile `Makefile.am` with the following content: (note that this is to execute the file `eron.c`)
+```python
+bin_PROGRAMS = hello
+hello_SOURCES = eron.c
+``` 
+
+- TDB Eclipse Integration (to be written..)
 
 ## References 
 
