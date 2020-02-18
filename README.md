@@ -15,4 +15,6 @@ Objective: how to develop and build a customized Linux image using Yocto project
 ...THIS IS A WORK IN PROGRESS...
 
 - References
+
 [Getting started with Git](https://www.taniarascia.com/getting-started-with-git/)
+[Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
