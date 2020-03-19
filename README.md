@@ -18,3 +18,4 @@ Objective: how to develop and build a customized Linux image using Yocto project
 
 - [Getting started with Git](https://www.taniarascia.com/getting-started-with-git/)
 - [Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+- [Valgrind](https://www.ic.unicamp.br/~rafael/cursos/2s2017/mc202/valgrind.html)
